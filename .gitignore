@@ -30,6 +30,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# pwa|sw stuff
+public/sw.js
+public/workbox-*.js
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
