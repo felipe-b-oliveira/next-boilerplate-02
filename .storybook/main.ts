@@ -6,7 +6,7 @@ const config: StorybookConfig = {
     options: {}
   },
   stories: ['../src/components/**/*.mdx', '../src/components/**/*.stories.@(mjs|ts|tsx)'],
-  staticDirs: ['../public'], //👈 Configures the static asset folder in Storybook
+  staticDirs: [{ from: '../public/img', to: '/public/img' }], //👈 Configures the static asset folder in Storybook
   addons: [
     '@storybook/addon-essentials',
   ],
